@@ -117,6 +117,7 @@ async function onLocationChange(location, action) {
       path: location.pathname,
       query: queryString.parse(location.search),
     });
+    // 目前看来是根据不同的路由，返回不同的组件，组件在route.component中，将作为App组件的子节点
 
     // Prevent multiple page renders during the routing process
     if (currentLocation.key !== location.key) {

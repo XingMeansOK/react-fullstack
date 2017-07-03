@@ -61,6 +61,8 @@ class App extends React.PureComponent {
     // NOTE: If you need to add or modify header, footer etc. of the app,
     // please do that inside the Layout component.
     return React.Children.only(this.props.children);
+    // this.props 对象的属性与组件的属性一一对应，但是有一个例外，
+    // 就是 this.props.children 属性。它表示组件的所有子节点。
   }
 
 }
